@@ -1,4 +1,4 @@
-oseX=0;
+noseX=0;
 noseY=0;
 difference = 0;
 rightWristX = 0;
@@ -36,3 +36,12 @@ function gotPoses(results)
     console.log("leftWristX  = " + leftWristX  + " rightWristX = "+ rightWristX + " difference = " + difference);
   }
 }
+function draw() {
+    txt = document.getElementById("txt").value;
+    background('#969A97');
+      document.getElementById("square_side").innerHTML = "Size of the text will be = " + difference +"px";
+    textSize(difference);
+      fill('#E00000');
+      stroke('#E00000');
+      text(txt, noseX, noseY);
+    }
